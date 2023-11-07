@@ -6,7 +6,7 @@ import React from 'react'
 const CustomButton = ({type,title,customStyles,handleClick}) => {
   const snap = useSnapshot(state);
   const generateStyle = (type) => {
-    if(type ==='filed'){
+    if(type ==='filled'){
       return{
         backgroundColor: snap.color,
         color :'#fff'
