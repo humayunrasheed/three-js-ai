@@ -45,7 +45,7 @@ const Customizer = () => {
     if(!prompt) return alert("Plese enter a prompt");
     try{
       setGeneratingImg(true);
-      const response = await fetch('http://localhost:8080/api/v1/dalle',{
+      const response = await fetch('https://create-tshirt-using-ai.onrender.com',{
         method:'POST',
         headers:{
           'Content-Type':'application/json'
